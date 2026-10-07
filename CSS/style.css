@@ -38,6 +38,8 @@ main {
     padding: 1rem;
 } 
 .producto-tarjeta { /* <--- producto tarjeta es la caja pequeña que contiene cada producto --->*/
+    display: flex;
+    justify-content: flex-end;
     background-color: #14409e59;
     width: 100%;
     border-radius: 8px;
