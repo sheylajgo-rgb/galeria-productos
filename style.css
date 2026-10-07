@@ -1,0 +1,133 @@
+/* <--- Base de documento ---> */
+* {
+    box-sizing: border-box;
+    }
+
+html {
+    font-size: 100%;
+    }
+body {
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #333;
+    background-color: #f8f9fa;
+    }
+/* <--- HEADER ---> */
+header {
+    background-color: hsla(224, 100%, 69%, 0.712); /* <-- el HSL es mas util que es Hex porqie guarda mas variedad de colores, ademas que es mas intuititvo ya que juega con la rueda cromatca y el hex se basa en combinaciones --> */
+    color: hsl(180, 4%, 5%);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px hsl(209, 23%, 43%); /*<-- sobra del header fui tomando la base del color(tono) azul y lo fui degradando (saturación y la iluminosidad) hasta llegar a un color mas oscuro -->*/
+    margin: 2rem;
+    display: grid;
+    justify-content: center;
+    }
+/*<--- Galeria ---> */
+main {
+    padding: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+/*<--- Galeria de la sesion class galeria --->*/
+.galeria { /* <--- la galeria es la caja grande que contiene todos los productos --->*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+} 
+.producto-tarjeta { /* <--- producto tarjeta es la caja pequeña que contiene cada producto --->*/
+    display: flex;
+    flex-direction: column;
+    background-color: #14409e59;
+    width: 100%;
+    border-radius: 8px;
+}
+.producto-info {
+    position: relative;
+    overflow: visible;
+    border-radius: 10px;
+    }
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px #c9d0e760;
+    
+}
+.galeria img:hover {
+   transform: scale(1.1);
+   transform: scale(1.1);
+}
+.header-contenido {
+    margin: 0 auto;
+    text-align: center;
+
+/*<--- CONTENEDOR ---> */
+}
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 1rem;
+    border:none;
+    
+ }
+.producto-tarjeta{
+    width:100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.producto-titulo h3{
+    margin:10px;
+    font-size: 20px;
+}
+.producto-precio{
+    color:green;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px
+}
+.producto-boton{
+    width: 100%;
+    padding: 12px;
+    border:none;
+    border-radius: 10px;
+    background-color: blue;
+    color: rgb(55, 55, 230);
+    cursor: pointer;
+    display: inline;
+}
+.boton-comprar:hover{
+    background-color: rgb(33, 33, 238);
+}
+.footer {
+    background-color:#1815eb9f;
+    padding: 10px;
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+} 
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+.producto-tarjeta {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+ 
